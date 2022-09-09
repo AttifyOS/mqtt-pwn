@@ -28,7 +28,7 @@ check_env() {
 }
 
 install() {
-  wget https://github.com/attify/mqtt-pwn/releases/download/v40368e5/mqtt-pwn-x86_64.AppImage -O $APM_TMP_DIR/mqtt-pwn-x86_64.AppImage
+  wget https://github.com/AttifyOS/mqtt-pwn/releases/download/v40368e5/mqtt-pwn-x86_64.AppImage -O $APM_TMP_DIR/mqtt-pwn-x86_64.AppImage
   mv $APM_TMP_DIR/mqtt-pwn-x86_64.AppImage $APM_PKG_INSTALL_DIR/mqtt-pwn-x86_64.AppImage
   chmod +x $APM_PKG_INSTALL_DIR/mqtt-pwn-x86_64.AppImage
   ln -s $APM_PKG_INSTALL_DIR/mqtt-pwn-x86_64.AppImage $APM_PKG_BIN_DIR/mqtt-pwn
